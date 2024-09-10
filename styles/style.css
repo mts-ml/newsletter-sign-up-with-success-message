@@ -26,7 +26,7 @@ div.container img {
 }
 
 div.info {
-  margin: 30px 20px;
+  margin: 30px 20px 40px;
 }
 div.info h1 {
   margin-bottom: 20px;
@@ -56,12 +56,13 @@ form input {
   border-radius: 10px;
   padding-left: 8px;
   width: 100%;
-  margin: 7px 0 20px;
+  margin: 7px 0;
 }
 form button {
   height: 50px;
   border-radius: 10px;
   padding: 10px 20px;
+  margin-top: 20px;
   font-size: 1rem;
   width: 100%;
   background-color: hsl(234, 29%, 20%);
