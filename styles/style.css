@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, input, textarea, button {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+main {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  background-color: hsl(234, 29%, 20%);
+}
+
+div.container {
+  background-color: hsl(0, 0%, 100%);
+  width: 315px;
+}
+div.container img {
+  width: 315px;
+}
+
+div.info {
+  margin: 30px 20px;
+}
+div.info h1 {
+  margin-bottom: 20px;
+}
+div.info p {
+  margin-bottom: 20px;
+}
+div.info ul {
+  list-style: none;
+}
+div.info ul img {
+  width: 20px;
+}
+div.info ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+form label {
+  color: hsl(234, 29%, 20%);
+  font-weight: bold;
+  font-size: 0.78rem;
+}
+form input {
+  height: 50px;
+  border-radius: 10px;
+  padding-left: 8px;
+  width: 100%;
+  margin: 7px 0 20px;
+}
+form button {
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  width: 100%;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

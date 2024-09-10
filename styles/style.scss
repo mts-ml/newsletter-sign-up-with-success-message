@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+$Tomato: hsl(4, 100%, 67%);
+$Dark-Slate-Grey: hsl(234, 29%, 20%);
+$Charcoal-Grey: hsl(235, 18%, 26%);
+$Grey: hsl(231, 7%, 60%);
+$White: hsl(0, 0%, 100%);
+
+body, input, textarea, button {
+   font-family: "Roboto", sans-serif;
+   font-size: 1rem;
+}
+
+main {
+   display: grid;
+   min-height: 100vh;
+   place-items: center;
+   background-color: $Dark-Slate-Grey;
+}
+
+div.container {
+   background-color: $White;
+   width: 315px;
+
+   img {
+      width: 315px;
+   }
+}
+
+div.info {
+   margin: 30px 20px;
+
+   h1 {
+      margin-bottom: 20px;
+   }
+
+   p {
+      margin-bottom: 20px;
+   }
+
+   ul {      
+      list-style: none;
+
+      img {
+         width: 20px;
+      }
+
+      li {
+         display: flex;
+         align-items: flex-start;
+         gap: 1rem;
+      }
+   }
+}
+
+form {
+   label {
+      color: $Dark-Slate-Grey;
+      font-weight: bold;
+      font-size: .78rem;
+   }
+
+   input {
+      height: 50px;
+      border-radius: 10px;
+      padding-left: 8px;
+      width: 100%;
+      margin: 7px 0 20px;
+   }
+
+   button {
+      height: 50px;
+      border-radius: 10px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      width: 100%;
+      background-color: $Dark-Slate-Grey;
+      color: $White;
+      cursor: pointer;
+   }
+}
+
