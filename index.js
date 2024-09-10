@@ -4,20 +4,24 @@ const email = document.getElementById("email");
 
 const emailError = document.querySelector("#email + span.error");
 
+const emailCorrect = document.querySelector("#email + span.correct");
+
 email.addEventListener("input", () => {
    if (email.validity.valid) {
       // In case there is an error message visible, if the field is valid, we remove the error message.
-      emailError.textContent = ""; // Reset the content of the message
-      emailError.className = "error"; // Reset the visual state of the message
+      emailError.innerHTML = ''
+
+      emailCorrect.innerHTML = `<i class="fas fa-check-circle"></i>` // Reset the content of the message      
    } else {
       showError();
    }
 })
 
+
 form.addEventListener("submit", (event) => {
    if (!email.validity.valid) {
-      showError();
-      event.preventDefault();
+      event.preventDefault()
+      showError()
    }
 })
 
@@ -32,6 +36,4 @@ function showError() {
       // If the data is too short
       emailError.textContent = `Email should be at least ${email.minLength} characters; you entered ${email.value.length}.`;
    }
-
-   emailError.className = "error active";
 }

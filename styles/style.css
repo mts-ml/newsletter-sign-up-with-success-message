@@ -5,7 +5,10 @@
   box-sizing: border-box;
 }
 
-body, input, textarea, button {
+body,
+input,
+textarea,
+button {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
 }
@@ -57,6 +60,35 @@ form input {
   padding-left: 8px;
   width: 100%;
   margin: 7px 0;
+}
+form input:focus:invalid {
+  background-color: #fdd;
+  border-color: rgb(255, 48, 48);
+  outline: none;
+}
+form input:valid {
+  background-color: rgba(121, 255, 121, 0.1);
+  border: 1px solid green;
+}
+form span.error {
+  width: 100%;
+  padding: 0;
+  font-size: 80%;
+  color: white;
+  background-color: rgba(255, 0, 0, 0.24);
+  border-radius: 0 0 5px 5px;
+  box-sizing: border-box;
+}
+form .error.active {
+  padding: 0.3em;
+}
+form span.correct {
+  width: 100%;
+  padding: 0;
+  font-size: 80%;
+  color: white;
+  background-color: green;
+  border-radius: 0 0 5px 5px;
 }
 form button {
   height: 50px;
