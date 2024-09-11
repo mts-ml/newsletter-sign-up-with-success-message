@@ -111,37 +111,37 @@ form button:hover {
   box-shadow: 0 7px 15px 1px rgba(255, 86, 112, 0.3);
 }
 
-@media screen and (min-width: 600px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   div.container {
-    width: 480px;
-    height: auto;
+    width: 450px;
+    height: 870px;
   }
   div.container img {
-    width: 480px;
+    width: 450px;
   }
   div.info h1 {
-    font-size: 3.2rem;
+    font-size: 2.5rem;
     margin: 40px 0;
   }
   div.info p {
-    font-size: 1.5rem;
-    margin-bottom: 40px;
+    font-size: 1rem;
+    margin-bottom: 20px;
   }
   div.info ul img {
-    width: 30px;
+    width: 27px;
   }
-}
-form input {
-  height: 65px;
-  font-size: 1.4rem;
-}
-form span.error,
-form span.correct {
-  font-size: 100%;
-}
-form button {
-  height: 65px;
-  font-size: 1.6rem;
+  form input {
+    height: 55px;
+    font-size: 1.2rem;
+  }
+  form span.error,
+  form span.correct {
+    font-size: 100%;
+  }
+  form button {
+    height: 55px;
+    font-size: 1.4rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
