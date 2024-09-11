@@ -31,6 +31,7 @@ main {
 div.container {
    background-color: $White;
    width: 315px;
+   height: 744px;
 
    img {
       width: 315px;
@@ -41,6 +42,7 @@ div.info {
    margin: 30px 20px 40px;
 
    h1 {
+      color: $Dark-Slate-Grey;
       margin-bottom: 20px;
    }
 
@@ -64,6 +66,8 @@ div.info {
 }
 
 form {
+   margin-top: 20px;
+
    label {
       color: $Dark-Slate-Grey;
       font-weight: bold;
@@ -89,27 +93,28 @@ form {
       border: 1px solid green;
    }
 
-   span.error {
+   span.error,
+   span.correct {
+      display: block;
       width: 100%;
-      padding: 0;
       font-size: 80%;
-      color: white;
-      background-color: rgba(255, 0, 0, 0.24);
-      border-radius: 0 0 5px 5px;
-      box-sizing: border-box;
+      text-align: center;
+      border-radius: 5px;
+      padding: 0;
    }
 
-   .error.active {
-      padding: 0.3em;
+   span.error {
+      color: black;
+      background-color: rgba(255, 0, 0, 0.24);
    }
 
    span.correct {
-      width: 100%;
-      padding: 0;
-      font-size: 80%;
       color: white;
-      background-color: green;
-      border-radius: 0 0 5px 5px;
+      background-color: rgba(0, 87, 0, 0.466);
+   }
+
+   .fas.fa-check-circle {
+      color: darkgreen;
    }
 
    button {
@@ -117,10 +122,10 @@ form {
       border-radius: 10px;
       padding: 10px 20px;
       margin-top: 20px;
-      font-size: 1rem;
       width: 100%;
       background-color: $Dark-Slate-Grey;
       color: $White;
+      border: none;
       cursor: pointer;
    }
 }

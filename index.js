@@ -1,39 +1,45 @@
-const form = document.querySelector("form");
+const form = document.querySelector("form")
 
-const email = document.getElementById("email");
+const emailInput = document.getElementById("email")
 
-const emailError = document.querySelector("#email + span.error");
+const emailError = document.querySelector("span.error")
 
-const emailCorrect = document.querySelector("#email + span.correct");
+const emailCorrect = document.querySelector("span.correct")
 
-email.addEventListener("input", () => {
-   if (email.validity.valid) {
+
+emailInput.addEventListener("input", (event) => {
+   if (emailInput.validity.valid) {
       // In case there is an error message visible, if the field is valid, we remove the error message.
       emailError.innerHTML = ''
 
-      emailCorrect.innerHTML = `<i class="fas fa-check-circle"></i>` // Reset the content of the message      
+      emailCorrect.innerHTML = `Valid <i class="fas fa-check-circle"></i>`
    } else {
-      showError();
-   }
-})
-
-
-form.addEventListener("submit", (event) => {
-   if (!email.validity.valid) {
-      event.preventDefault()
+      emailCorrect.innerHTML = ''
       showError()
    }
 })
 
+
 function showError() {
-   if (email.validity.valueMissing) {
+   if (emailInput.validity.valueMissing) {
       // If the field is empty, display the following error message.
       emailError.textContent = "You need to enter an email address."
-   } else if (email.validity.typeMismatch) {
+   } else if (emailInput.validity.typeMismatch) {
       // If the field doesn't contain an email address
-      emailError.textContent = "Entered value needs to be an email address.";
-   } else if (email.validity.tooShort) {
+      emailError.textContent = "Entered value needs to be an email address."
+   } else if (emailInput.validity.tooShort) {
       // If the data is too short
-      emailError.textContent = `Email should be at least ${email.minLength} characters; you entered ${email.value.length}.`;
+      emailError.textContent = `Email should be at least ${emailInput.minLength} characters, you entered ${emailInput.value.length}.`
    }
 }
+
+
+form.addEventListener("submit", (event) => {
+   event.preventDefault()
+
+   if (!emailInput.validity.valid) {
+      showError()
+   } else {
+      window.location.href = 'message.html'
+   }
+})
