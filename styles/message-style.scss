@@ -22,9 +22,10 @@ button {
 }
 
 main {
-   display: grid;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    min-height: 100vh;
-   place-items: center;
    background-color: $Dark-Slate-Grey;
 }
 
@@ -69,9 +70,38 @@ div.container {
 
    button:hover {
       background: linear-gradient(45deg, #FF5670, #FF5670, #FF5F58, #FF644B);
-      box-shadow: 0 10px 15px 1px rgba(255, 86, 112, 0.5)
+      box-shadow: 0 7px 15px 1px rgba(255, 86, 112, 0.3)
    }
 }
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+   div.container {
+      width: 450px;
+      height: 870px;
+
+      div.content {
+         margin-top: 135px;
+      }
+
+      h1 {
+         font-size: 3rem;
+      }
+
+      p {
+         font-size: 1.4rem;
+         font-weight: 400;
+         line-height: 1.8rem;
+         padding-right: 30px;
+      }
+
+      button {
+         height: 55px;
+         font-size: 1.4rem;
+         width: 90%;
+      }
+   }
+}
+
 
 
 @media screen and (min-width:992px) {
