@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+$Tomato: hsl(4, 100%, 67%);
+$Dark-Slate-Grey: hsl(234, 29%, 20%);
+$Charcoal-Grey: hsl(235, 18%, 26%);
+$Grey: hsl(231, 7%, 60%);
+$White: hsl(0, 0%, 100%);
+
+body,
+input,
+textarea,
+button {
+   font-family: "Roboto", sans-serif;
+   font-size: 1rem;
+}
+
+main {
+   display: grid;
+   min-height: 100vh;
+   place-items: center;
+   background-color: $Dark-Slate-Grey;
+}
+
+div.container {
+   background-color: $White;
+   width: 315px;
+   height: 744px;
+   
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: space-between;
+   
+   div.content {
+      padding: 0 30px;
+      margin-top: 120px;
+   }
+
+   h1 {
+      color: $Dark-Slate-Grey;
+      margin: 30px 0;
+      font-weight: bold;
+      font-size: 2.3rem;
+   }
+
+   p {
+      color: $Dark-Slate-Grey;
+      line-height: 1.4rem;
+      font-weight: 500;
+   }
+
+   button {
+      margin-bottom: 40px;
+      height: 50px;
+      border-radius: 10px;
+      border: none;
+      margin-left: 20px;
+      width: 88%;
+      background-color: $Dark-Slate-Grey;
+      color: $White;
+      cursor: pointer;
+   }
+
+   button:hover {
+      background: linear-gradient(45deg, #FF5670, #FF5670, #FF5F58, #FF644B);
+   }
+}
