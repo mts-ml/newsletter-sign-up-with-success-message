@@ -3,6 +3,6 @@
     "sass": "^1.78.0"
   },
   "scripts": {
-    "sass": "sass styles/style.scss:styles/style.css styles/message-style.scss:styles/message-style.css"
+    "sass": "sass styles/style.scss:styles/style.css styles/message-style.scss:styles/message-style.css styles/media-querie-style.scss:styles/media-querie-style.css"
   }
 }

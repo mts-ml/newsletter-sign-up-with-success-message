@@ -10,6 +10,7 @@
   <title>Newsletter sign-up form</title>
 
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/media-querie-style.css" media="(min-width: 992px)">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
@@ -20,11 +21,13 @@
 <body>
   <main>
     <div class="container">
-      <img src="./assets/images/illustration-sign-up-mobile.svg" alt="Some graphics in the red and orange color.">
+      <picture>
+        <source media="(min-width:992px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
+
+        <img src="./assets/images/illustration-sign-up-mobile.svg" alt="Some graphics in the red and orange color.">
+      </picture>
 
       <div class="info">
-        <!-- Sign-up form start -->
-
         <h1>Stay updated!</h1>
 
         <p>
@@ -51,10 +54,7 @@
         <form id="form" novalidate>
           <label for="email">Email address</label>
 
-          <input type="email" required          
-          id="email"
-          minlength="7"
-          placeholder="email@company.com">
+          <input type="email" required id="email" minlength="7" placeholder="email@company.com">
           <span class="error" aria-live="polite"></span>
           <span class="correct" aria-live="polite"></span>
 

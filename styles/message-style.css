@@ -56,6 +56,28 @@ div.container button {
 }
 div.container button:hover {
   background: linear-gradient(45deg, #FF5670, #FF5670, #FF5F58, #FF644B);
+  box-shadow: 0 10px 15px 1px rgba(255, 86, 112, 0.5);
+}
+
+@media screen and (min-width: 992px) {
+  div.container {
+    width: 500px;
+    height: auto;
+    border-radius: 30px;
+  }
+  div.container div.content {
+    padding: 0 50px;
+    margin-top: 50px;
+  }
+  div.container h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+  div.container button {
+    margin: 40px 0 60px;
+    width: 80%;
+    margin-left: 50px;
+  }
 }
 
 /*# sourceMappingURL=message-style.css.map */
