@@ -6,12 +6,13 @@ const emailError = document.querySelector("span.error")
 
 const emailCorrect = document.querySelector("span.correct")
 
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/
 
-emailInput.addEventListener("input", (event) => {
+
+emailInput.addEventListener("input", () => {
    if (emailInput.validity.valid) {
       // In case there is an error message visible, if the field is valid, we remove the error message.
       emailError.innerHTML = ''
-
       emailCorrect.innerHTML = `Valid <i class="fas fa-check-circle"></i>`
    } else {
       emailCorrect.innerHTML = ''
@@ -27,6 +28,8 @@ function showError() {
    } else if (emailInput.validity.typeMismatch) {
       // If the field doesn't contain an email address
       emailError.textContent = "Entered value needs to be an email address."
+   } else if (!emailRegex.test(emailInput.value)) {
+      emailError.textContent = "Make sure to insert '@' and '.com'"
    } else if (emailInput.validity.tooShort) {
       // If the data is too short
       emailError.textContent = `Email should be at least ${emailInput.minLength} characters, you entered ${emailInput.value.length}.`
