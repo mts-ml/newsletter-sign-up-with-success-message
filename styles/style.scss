@@ -83,14 +83,8 @@ form {
       border: .5px solid rgba(0, 0, 0, 0.377);
    }
 
-   input:focus:invalid {
+   input#email:focus:invalid {
       background-color: #fdd;
-      border-color: rgb(255, 48, 48);
-   }
-
-   input:valid {
-      background-color: rgba(121, 255, 121, 0.1);
-      border: 1px solid green;
    }
 
    span.error,
