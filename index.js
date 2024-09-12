@@ -43,6 +43,8 @@ form.addEventListener("submit", (event) => {
    if (!emailInput.validity.valid) {
       showError()
    } else {
+      const email = emailInput.value
+      localStorage.setItem('Email', email)
       window.location.href = 'message.html'
    }
 })
