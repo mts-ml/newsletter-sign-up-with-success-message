@@ -55,8 +55,13 @@
         <form id="form" novalidate>
           <label for="email">Email address</label>
 
-          <input type="email" required id="email" minlength="9" placeholder="email@company.com">
-
+          <input type="email"
+          required
+          id="email"
+          minlength="10"
+          placeholder="email@company.com" autocomplete="off"
+          >
+          
           <span class="error" aria-live="polite"></span>
           <span class="correct" aria-live="polite"></span>
 
