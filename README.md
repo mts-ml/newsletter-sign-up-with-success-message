@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- [Preview Site](https://mts-ml.github.io/development/newsletter-sign-up-with-success-message/index.html)
+- [Preview Site](https://mts-ml.github.io/newsletter-sign-up-with-success-message/)
 
 ## My process
 
